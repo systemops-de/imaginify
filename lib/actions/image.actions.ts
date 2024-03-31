@@ -29,6 +29,7 @@ export async function addImage({ image, userId, path }: AddImageParams) {
     const newImage = await Image.create({
       ...image,
       author: author._id,
+     
     })
 
     revalidatePath(path);

@@ -52,7 +52,7 @@ export const Collection = ({
         <h2 className="h2-bold text-dark-600">Recent Edits</h2>
         {hasSearch && <Search />}
       </div>
-
+        
       {images.length > 0 ? (
         <ul className="collection-list">
           {images.map((image) => (
